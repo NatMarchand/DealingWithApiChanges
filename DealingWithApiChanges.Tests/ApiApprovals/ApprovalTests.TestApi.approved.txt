@@ -1,0 +1,16 @@
+﻿[assembly: System.Runtime.InteropServices.ComVisibleAttribute(false)]
+[assembly: System.Runtime.InteropServices.GuidAttribute("0ca4a0d1-e909-4871-8440-652cea687fd8")]
+[assembly: System.Runtime.Versioning.TargetFrameworkAttribute(".NETFramework,Version=v4.7.1", FrameworkDisplayName=".NET Framework 4.7.1")]
+namespace DealingWithApiChanges.MyApi
+{
+    public interface ICanGreet
+    {
+        void SayHello();
+    }
+    public class Person : DealingWithApiChanges.MyApi.ICanGreet
+    {
+        public Person() { }
+        public string Name { get; set; }
+        public void SayHello() { }
+    }
+}
